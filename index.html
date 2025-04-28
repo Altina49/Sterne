@@ -8,31 +8,31 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: #f4f4f4 url('sterrecarrosserie.jpg.png') no-repeat center center;
-            background-size: contain;
-            background-attachment: fixed;
+            background-color: #f8f9fa; /* gri shumë e lehtë */
             color: #333;
         }
         header {
-            background: rgba(255, 215, 0, 0.8); /* ngjyrë gold e lehtë */
-            padding: 20px;
-            text-align: center;
+            background-color: #ffd700; /* gold i lehtë */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+        }
+        header img {
+            height: 60px;
         }
         nav a {
-            margin: 0 15px;
+            margin-left: 20px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
         nav a:hover {
-            color: goldenrod;
+            color: #555;
         }
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background: rgba(255,255,255,0.8);
-            margin: 30px;
-            border-radius: 15px;
             animation: fadeIn 2s ease-in-out;
         }
         .whatsapp-button {
@@ -59,7 +59,7 @@
 <body>
 
 <header>
-    <h1>Willkommen bei Sterne Carrosserie</h1>
+    <img src="sterrecarrosserie.jpg.png" alt="Sterne Carrosserie Logo">
     <nav>
         <a href="index.html">Home</a>
         <a href="rreth-nesh.html">Über uns</a>
@@ -69,8 +69,8 @@
 </header>
 
 <section class="hero">
-    <h2>Perfekte Karosseriearbeiten für Ihr Fahrzeug</h2>
-    <p>Qualität, Präzision und Leidenschaft – Ihre Zufriedenheit ist unser Antrieb.</p>
+    <h1>Willkommen bei Sterne Carrosserie</h1>
+    <p>Meisterhafte Karosseriearbeiten – Präzision und Leidenschaft für Ihr Fahrzeug.</p>
 </section>
 
 <a class="whatsapp-button" href="https://wa.me/38349403375" target="_blank">💬</a>
