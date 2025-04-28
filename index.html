@@ -8,15 +8,16 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa; /* gri shumë e lehtë */
-            color: #333;
+            background-color: #f5f5f5; /* gri shumë i lehtë */
+            color: #000; /* tekst i zi */
         }
         header {
-            background-color: #ffd700; /* gold i lehtë */
+            background-color: #ffffff; /* bardhë e pastër */
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         header img {
             height: 60px;
@@ -24,7 +25,7 @@
         nav a {
             margin-left: 20px;
             text-decoration: none;
-            color: #333;
+            color: #000;
             font-weight: bold;
         }
         nav a:hover {
@@ -50,9 +51,18 @@
             text-decoration: none;
             box-shadow: 0px 0px 10px gray;
         }
+        /* Animacione */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
@@ -70,7 +80,7 @@
 
 <section class="hero">
     <h1>Willkommen bei Sterne Carrosserie</h1>
-    <p>Meisterhafte Karosseriearbeiten – Präzision und Leidenschaft für Ihr Fahrzeug.</p>
+    <p>Exzellente Karosserie- und Lackierarbeiten für Ihr Fahrzeug.</p>
 </section>
 
 <a class="whatsapp-button" href="https://wa.me/38349403375" target="_blank">💬</a>
