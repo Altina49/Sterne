@@ -1,156 +1,86 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="sq">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sterne Carrosserie</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f2f2f2; /* Gri shumë e lehtë */
-      color: #000;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: url('sterrecarrosserie.jpg.png') no-repeat center center/contain;
-      height: 300px;
-      background-color: #f2f2f2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 20px 0;
-      animation: fadeInDown 1s ease;
-    }
-
-    nav {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      animation: fadeIn 1s ease;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #555;
-    }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      animation: fadeInUp 1s ease;
-    }
-
-    footer {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      margin-top: 40px;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* WhatsApp Button */
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 1000;
-      animation: fadeIn 2s ease;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqja Ime</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>Mirë se vini në Faqen Time!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Kreu</a></li>
+                <li><a href="#rreth">Rreth Nesh</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>Sterne Carrosserie</h1>
-</header>
+    <section id="home">
+        <h2>Kreu</h2>
+        <p>Kjo është faqja kryesore e web-it tuaj.</p>
+    </section>
 
-<nav>
-  <a href="#home">Startseite</a>
-  <a href="#about">Über Uns</a>
-  <a href="#services">Dienstleistungen</a>
-  <a href="#contact">Kontakt</a>
-</nav>
+    <section id="rreth">
+        <h2>Rreth Nesh</h2>
+        <p>Ne jemi një kompani që ofron shërbime të ndryshme për klientët tanë.</p>
+    </section>
 
-<section id="home">
-  <h2>Willkommen bei Sterne Carrosserie</h2>
-  <p>Qualität, Präzision und Leidenschaft für Fahrzeuge.</p>
-</section>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Na kontaktoni në email: <a href="mailto:info@example.com">info@example.com</a></p>
+    </section>
 
-<section id="about">
-  <h2>Über Uns</h2>
-  <p>Wir sind Spezialisten für Fahrzeugkarosserien mit jahrelanger Erfahrung und Liebe zum Detail.</p>
-</section>
-
-<section id="services">
-  <h2>Unsere Dienstleistungen</h2>
-  <ul style="list-style:none; padding:0;">
-    <li>Karosseriereparaturen</li>
-    <li>Lackierung und Design</li>
-    <li>Komplette Fahrzeugrestauration</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Kontakt</h2>
-  <p>Rufen Sie uns an oder schreiben Sie uns auf WhatsApp!</p>
-</section>
-
-<footer>
-  &copy; 2025 Sterne Carrosserie. Alle Rechte vorbehalten.
-</footer>
-
-<!-- WhatsApp Button -->
-<a href="https://api.whatsapp.com/send?phone=41792685602" target="_blank" style="position:fixed; bottom:20px; right:20px; background-color:#25D366; color:white; padding:15px; border-radius:50px; font-size:20px; text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,0.3);">
-    WhatsApp
-</a>
-
+    <footer>
+        <p>&copy; 2025 Faqja Ime. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
 </body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
