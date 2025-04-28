@@ -1,97 +1,154 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Sterne Carrosserie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sterne Carrosserie</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2; /* Gri shumë e lehtë */
       color: #000;
+      overflow-x: hidden;
     }
+
     header {
-      background-color: #fff;
+      background: url('sterrecarrosserie.jpg.png') no-repeat center center/contain;
+      height: 300px;
+      background-color: #f2f2f2;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      justify-content: center;
     }
-    header img {
-      height: 60px;
+
+    h1 {
+      font-size: 48px;
+      margin: 20px 0;
+      animation: fadeInDown 1s ease;
     }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: fadeIn 1s ease;
+    }
+
     nav a {
       text-decoration: none;
       color: #000;
-      margin-left: 20px;
       font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
     }
+
     nav a:hover {
       color: #555;
     }
+
     section {
-      padding: 80px 20px;
+      padding: 60px 20px;
       text-align: center;
-      animation: slideIn 2s ease;
+      animation: fadeInUp 1s ease;
     }
-    form {
-      max-width: 500px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 40px;
     }
-    input, textarea {
-      width: 100%;
-      margin: 10px 0;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    button {
-      background-color: #000;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #333;
-    }
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(30px); }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      animation: fadeIn 2s ease;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <img src="sterrecarrosserie.jpg.png" alt="Logo">
-  <nav>
-    <a href="index.html">Kreu</a>
-    <a href="rreth-nesh.html">Rreth Nesh</a>
-    <a href="sherbimet.html">Shërbimet</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
+  <h1>Sterne Carrosserie</h1>
 </header>
 
-<section>
-  <h1>Na Kontaktoni</h1>
-  <form>
-    <input type="text" name="emri" placeholder="Emri juaj" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="mesazhi" rows="5" placeholder="Mesazhi juaj..." required></textarea>
-    <button type="submit">Dërgo Mesazhin</button>
-  </form>
+<nav>
+  <a href="#home">Startseite</a>
+  <a href="#about">Über Uns</a>
+  <a href="#services">Dienstleistungen</a>
+  <a href="#contact">Kontakt</a>
+</nav>
+
+<section id="home">
+  <h2>Willkommen bei Sterne Carrosserie</h2>
+  <p>Qualität, Präzision und Leidenschaft für Fahrzeuge.</p>
 </section>
+
+<section id="about">
+  <h2>Über Uns</h2>
+  <p>Wir sind Spezialisten für Fahrzeugkarosserien mit jahrelanger Erfahrung und Liebe zum Detail.</p>
+</section>
+
+<section id="services">
+  <h2>Unsere Dienstleistungen</h2>
+  <ul style="list-style:none; padding:0;">
+    <li>Karosseriereparaturen</li>
+    <li>Lackierung und Design</li>
+    <li>Komplette Fahrzeugrestauration</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Kontakt</h2>
+  <p>Rufen Sie uns an oder schreiben Sie uns auf WhatsApp!</p>
+</section>
+
+<footer>
+  &copy; 2025 Sterne Carrosserie. Alle Rechte vorbehalten.
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/37749403375" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
