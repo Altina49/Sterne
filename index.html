@@ -7,54 +7,34 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4 url('sterrecarrosserie.jpg.png') no-repeat center center;
+            background-size: contain;
+            background-attachment: fixed;
             color: #333;
         }
-
         header {
-            height: 100vh;
-            background: url('sterre carrosserie.png') no-repeat center center/contain;
-            background-color: #f4f4f4;
-            background-size: 50%;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: rgba(255, 215, 0, 0.8); /* ngjyrë gold e lehtë */
+            padding: 20px;
             text-align: center;
-            position: relative;
         }
-
-        header::after {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.5); /* Mbulesë e bardhë shumë e lehtë */
-            z-index: 0;
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
-
-        header h1, header p {
-            z-index: 1;
-            position: relative;
-            color: #5c4033; /* E përafërt me ngjyrën e logos */
+        nav a:hover {
+            color: goldenrod;
         }
-
-        section {
-            padding: 4em 2em;
-            background-color: #f9f9f9;
-        }
-
-        footer {
-            background-color: #5c4033;
-            color: #fff;
+        .hero {
             text-align: center;
-            padding: 1em;
+            padding: 100px 20px;
+            background: rgba(255,255,255,0.8);
+            margin: 30px;
+            border-radius: 15px;
+            animation: fadeIn 2s ease-in-out;
         }
-
-        /* Butoni WhatsApp */
         .whatsapp-button {
             position: fixed;
             bottom: 20px;
@@ -62,38 +42,38 @@
             background-color: #25d366;
             color: white;
             border: none;
-            padding: 15px;
             border-radius: 50%;
+            padding: 15px;
             font-size: 24px;
+            text-align: center;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 10px gray;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sterne Carrosserie</h1>
-    <p>Exzellente Qualität & Innovation im Karosseriebau</p>
+    <h1>Willkommen bei Sterne Carrosserie</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rreth-nesh.html">Über uns</a>
+        <a href="sherbimet.html">Dienstleistungen</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
 </header>
 
-<section>
-    <h2>Unsere Dienstleistungen</h2>
-    <p>Karosserie Reparaturen, Lackierungen und professionelle Fahrzeugpflege.</p>
+<section class="hero">
+    <h2>Perfekte Karosseriearbeiten für Ihr Fahrzeug</h2>
+    <p>Qualität, Präzision und Leidenschaft – Ihre Zufriedenheit ist unser Antrieb.</p>
 </section>
 
-<section>
-    <h2>Über uns</h2>
-    <p>Mit Leidenschaft und Präzision kümmern wir uns um Ihr Fahrzeug.</p>
-</section>
-
-<footer>
-    &copy; 2025 Sterne Carrosserie. Alle Rechte vorbehalten.
-</footer>
-
-<!-- Butoni i WhatsApp -->
-<a class="whatsapp-button" href="https://wa.me/37749403375" target="_blank">💬</a>
+<a class="whatsapp-button" href="https://wa.me/38349403375" target="_blank">💬</a>
 
 </body>
 </html>
