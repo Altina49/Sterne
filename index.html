@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sterne Carrosserie</title>
+    <title>Shërbimet - Sterne Carrosserie</title>
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5; /* gri shumë i lehtë */
-            color: #000; /* tekst i zi */
+            background-color: #f5f5f5;
+            color: #000;
         }
         header {
-            background-color: #ffffff; /* bardhë e pastër */
+            background-color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,38 +31,27 @@
         nav a:hover {
             color: #555;
         }
-        .hero {
+        .services {
             text-align: center;
-            padding: 100px 20px;
-            animation: fadeIn 2s ease-in-out;
+            padding: 80px 20px;
+            animation: slideInRight 2s ease-in-out;
         }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0px 0px 10px gray;
+        .service-item {
+            background: #ffffff;
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        /* Animacione */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .service-item:hover {
+            transform: scale(1.02);
         }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-100px); }
+        /* Animacion për Shërbimet */
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(100px); }
             to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes zoomIn {
-            from { opacity: 0; transform: scale(0.5); }
-            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
@@ -71,19 +60,32 @@
 <header>
     <img src="sterrecarrosserie.jpg.png" alt="Sterne Carrosserie Logo">
     <nav>
-        <a href="index.html">Home</a>
-        <a href="rreth-nesh.html">Über uns</a>
-        <a href="sherbimet.html">Dienstleistungen</a>
+        <a href="index.html">Kreu</a>
+        <a href="rreth-nesh.html">Rreth Nesh</a>
+        <a href="sherbimet.html">Shërbimet</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section class="hero">
-    <h1>Willkommen bei Sterne Carrosserie</h1>
-    <p>Exzellente Karosserie- und Lackierarbeiten für Ihr Fahrzeug.</p>
-</section>
+<section class="services">
+    <h1>Shërbimet tona</h1>
 
-<a class="whatsapp-button" href="https://wa.me/38349403375" target="_blank">💬</a>
+    <div class="service-item">
+        <h2>Riparime Karroserie</h2>
+        <p>Ofrojmë riparime të plota karroserie duke përdorur teknologji moderne dhe materiale cilësore për një rezultat perfekt.</p>
+    </div>
+
+    <div class="service-item">
+        <h2>Lyerje Profesionale</h2>
+        <p>Ngjyrosje dhe lyerje me standarde të larta për të rikthyer pamjen origjinale të automjetit tuaj.</p>
+    </div>
+
+    <div class="service-item">
+        <h2>Shërbime Restaurimi</h2>
+        <p>Specialistë në restaurimin e automjeteve klasike dhe moderne me vëmendje ndaj çdo detaji.</p>
+    </div>
+
+</section>
 
 </body>
 </html>
