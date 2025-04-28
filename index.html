@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shërbimet - Sterne Carrosserie</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            color: #000;
-        }
-        header {
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        header img {
-            height: 60px;
-        }
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #555;
-        }
-        .services {
-            text-align: center;
-            padding: 80px 20px;
-            animation: slideInRight 2s ease-in-out;
-        }
-        .service-item {
-            background: #ffffff;
-            margin: 20px auto;
-            padding: 30px;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .service-item:hover {
-            transform: scale(1.02);
-        }
-        /* Animacion për Shërbimet */
-        @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(100px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Sterne Carrosserie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #000;
+    }
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #555;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      animation: slideIn 2s ease;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <img src="sterrecarrosserie.jpg.png" alt="Sterne Carrosserie Logo">
-    <nav>
-        <a href="index.html">Kreu</a>
-        <a href="rreth-nesh.html">Rreth Nesh</a>
-        <a href="sherbimet.html">Shërbimet</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+  <img src="sterrecarrosserie.jpg.png" alt="Logo">
+  <nav>
+    <a href="index.html">Kreu</a>
+    <a href="rreth-nesh.html">Rreth Nesh</a>
+    <a href="sherbimet.html">Shërbimet</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 </header>
 
-<section class="services">
-    <h1>Shërbimet tona</h1>
-
-    <div class="service-item">
-        <h2>Riparime Karroserie</h2>
-        <p>Ofrojmë riparime të plota karroserie duke përdorur teknologji moderne dhe materiale cilësore për një rezultat perfekt.</p>
-    </div>
-
-    <div class="service-item">
-        <h2>Lyerje Profesionale</h2>
-        <p>Ngjyrosje dhe lyerje me standarde të larta për të rikthyer pamjen origjinale të automjetit tuaj.</p>
-    </div>
-
-    <div class="service-item">
-        <h2>Shërbime Restaurimi</h2>
-        <p>Specialistë në restaurimin e automjeteve klasike dhe moderne me vëmendje ndaj çdo detaji.</p>
-    </div>
-
+<section>
+  <h1>Na Kontaktoni</h1>
+  <form>
+    <input type="text" name="emri" placeholder="Emri juaj" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mesazhi" rows="5" placeholder="Mesazhi juaj..." required></textarea>
+    <button type="submit">Dërgo Mesazhin</button>
+  </form>
 </section>
 
 </body>
